@@ -1,0 +1,22 @@
+.projectThumbnail {
+    /* width: 250px;
+    height: 200px; */
+    z-index: 1;
+}
+.projectThumbnail:hover {
+    opacity: .25;
+}
+
+
+.card-body {
+    z-index: 1;
+}
+
+
+.projectTitleLink {
+    color: white;    
+}
+.projectTitleLink:hover {
+    /* necessary to prevent color change on hover (from Bootstrap)*/
+    color: white;
+}
