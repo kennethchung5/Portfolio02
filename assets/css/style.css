@@ -1,14 +1,15 @@
 .projectsContainer {
-    /* border: green dotted; */
+    border: green dotted;
 
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
 
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 
 .projectItem {
-    margin: 10px 5px; 
+    margin: 10px; 
+    float: left;
 }
 
 .projectThumbnail {
