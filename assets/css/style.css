@@ -1,3 +1,16 @@
+.projectsContainer {
+    /* border: green dotted; */
+
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-evenly;
+}
+
+.projectItem {
+    margin: 10px 5px; 
+}
+
 .projectThumbnail {
     /* width: 250px;
     height: 200px; */
