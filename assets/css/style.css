@@ -1,5 +1,30 @@
+.headerBox {
+    /* border: yellow solid; */
+
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameBox {
+    background-color: aqua;
+    color: white;
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+.extLinksBox {
+    /* border: purple solid; */
+
+    flex-wrap: nowrap;
+}
+
 .projectsContainer {
-    border: green dotted;
+    /* border: green dotted; */
 
     /* display: flex;
     flex-flow: row wrap;
@@ -33,4 +58,12 @@
 .projectTitleLink:hover {
     /* necessary to prevent color change on hover (from Bootstrap)*/
     color: white;
+}
+
+
+
+@media all and (max-width: 575px) {
+    .headerBox {
+        justify-content: center;
+    }    
 }
