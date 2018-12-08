@@ -1,8 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+
 .headerBox {
-    /* border: yellow solid; */
+    border: yellow solid;
+    background-color: whitesmoke;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 
     justify-content: space-between;
     align-items: center;
@@ -15,22 +21,37 @@
     text-align: center;
     padding: 10px;
 
+    width: 34%;
+
 }
 
+.extLinksBox, .contactInfoBox {    
+    flex-flow: column nowrap;
+    width: 33%;
+}
+
+.contactInfoBox {
+    align-items: flex-start;
+}
 .extLinksBox {
-    /* border: purple solid; */
-
-    flex-wrap: nowrap;
+    align-items: flex-end;
 }
 
-.projectsContainer {
-    /* border: green dotted; */
 
-    /* display: flex;
+
+
+
+.aboutText {
+    background-color: bisque;
+}
+
+/* flexbox; scrapped in favor of float */
+/* .projectsContainer {
+    border: green dotted;
+    display: flex;
     flex-flow: row wrap;
-
-    justify-content: space-evenly; */
-}
+    justify-content: space-evenly;
+} */
 
 .projectItem {
     margin: 10px; 
@@ -62,8 +83,40 @@
 
 
 
-@media all and (max-width: 575px) {
+/* @media all and (max-width: 575px)  */
+
+
+
+
+@media all and (max-width: 767px) {
     .headerBox {
+        flex-flow: column nowrap;
         justify-content: center;
-    }    
+    }
+
+    .nameBox, .extLinksBox, .contactInfoBox {
+        width: 100%;
+    }
+
+    .extLinksBox, .contactInfoBox {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .nameBox {
+        order: 1;
+    }
+    .contactInfoBox {
+        order: 2;
+    }
+    .extLinksBox {
+        order: 3;
+    }
+}
+
+@media all and (max-width: 399px) {
+    .contactInfoBox {
+        flex-direction: column;
+        align-items: center;
+    }
 }
