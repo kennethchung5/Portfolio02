@@ -63,7 +63,7 @@
     height: 200px; */
     z-index: 1;
 }
-.projectThumbnail:hover {
+.projectThumbnail:hover, .projectThumbnail:active {
     opacity: .25;
 }
 
